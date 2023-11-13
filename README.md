@@ -6,13 +6,13 @@ In this repo we will perfrom object detection for ships from SAR (synthtic apert
 ![Alo_75_1_2](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/4e0a5017-65b9-4dfa-af51-63de931082a0)
 ![Paz_14_11_20](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/9576ba26-70f5-4f8d-b259-65d5a3fb994e)
 
-#Quick Start
+# Quick Start
 Download the git 
 ```
 https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/edit/main/README.md
 ```
 
-#Requirements
+# Requirements
 for the installations follow this 
 ```
 pip install requirements.txt
@@ -22,7 +22,7 @@ and here is an additional link
 https://detectron2.readthedocs.io/en/latest/tutorials/install.html
 ```
 
-#TAsk introductiion
+# Task introductiion
 We have trained detectron2 retinanet model on three public datasets for ship detection task:
 
 1. SAR Ship Detection Dataset (SSDD)   : Images = 1160  : Sensor = 3
