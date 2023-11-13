@@ -1,0 +1,22 @@
+499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 216, 'FP': 2, 'FN': 330, 'Precision': 0.9908256880733946, 'Recall': 0.3956043956, 'F1': 0.5654042448756187}
+
+1499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 227, 'FP': 4, 'FN': 319, 'Precision': 0.9826839826839827, 'Recall': 0.4157509157509158, 'F1': 0.5842568049632991}
+
+
+
+2999
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 216, 'FP': 2, 'FN': 330, 'Precision': 0.9908256880733946, 'Recall': 0.3956043956043956, 'F1': 0.5654042448756187}
+
+3999
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 230, 'FP': 1, 'FN': 316, 'Precision': 0.9956709956709957, 'Recall': 0.42124542124542125, 'F1': 0.5919788126463411}
+
+
+4999
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 231, 'FP': 0, 'FN': 315, 'Precision': 1.0, 'Recall': 0.4230769230769231, 'F1': 0.59455281520758}
+
+6499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 202, 'FP': 29, 'FN': 344, 'Precision': 0.8744588744588745, 'Recall': 0.36996336996337, 'F1': 0.5199067409829549}
+
+

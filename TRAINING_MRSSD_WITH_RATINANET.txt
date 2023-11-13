@@ -1,0 +1,26 @@
+[11/10 02:49:54 d2.data.build]: Removed 1139 images with no usable annotations. 6973 images left.
+[11/10 02:49:54 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
+[11/10 02:49:54 d2.data.build]: Using training sampler TrainingSampler
+[11/10 02:49:54 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[11/10 02:49:54 d2.data.common]: Serializing 6973 elements to byte tensors and concatenating them all ...
+[11/10 02:49:54 d2.data.common]: Serialized dataset takes 2.16 MiB
+[11/10 02:50:01 d2.data.build]: Removed 275 images with no usable annotations. 2043 images left.
+[11/10 02:50:01 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+|    ship    | 5299         |
+|            |              |
+[11/10 02:50:01 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
+[11/10 02:50:01 d2.data.build]: Using training sampler TrainingSampler
+[11/10 02:50:01 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[11/10 02:50:01 d2.data.common]: Serializing 2043 elements to byte tensors and concatenating them all ...
+[11/10 02:50:01 d2.data.common]: Serialized dataset takes 0.62 MiB
+[11/10 02:50:01 d2.checkpoint.detection_checkpoint]: [DetectionCheckpointer] Loading from https://dl.fbaipublicfiles.com/detectron2/COCO-Detection/retinanet_R_101_FPN_3x/190397697/model_final_971ab9.pkl ...
+The checkpoint state_dict contains keys that are not used by the model:
+  pixel_mean
+  pixel_std
+[11/10 02:50:01 d2.engine.train_loop]: Starting training from iteration 0
+/home/caic/.local/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3483.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+[11/10 02:50:09 d2.utils.events]:  eta: 0:21:34  iter: 19  total_loss: 0.8644  loss_cls: 0.6596  loss_box_reg: 0.2014  total_val_loss: 1.256  val_loss_cls: 0.961  val_loss_box_reg: 0.3692    time: 0.1748  last_time: 0.1577  data_time: 0.0053  last_data_time: 0.0015   lr: 4.9953e-06  max_mem: 1855M
+[11/10 02:50:13 d2.utils.events]:  eta: 0:21:49  iter: 39  total_loss: 1.397  loss_cls: 1.09  loss_box_reg: 0.3269  total_val_loss: 1.214  val_loss_cls: 0.9078  val_loss_box_reg: 0.2289    time: 0.1559  last_time: 0.1374  data_time: 0.0016  last_data_time: 0.0015   lr: 9.9902e-06  max_mem: 1856M

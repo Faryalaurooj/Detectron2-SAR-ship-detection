@@ -1,0 +1,19 @@
+model weight 499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 6409, 'FP': 296, 'FN': 3646, 'Precision': 0.9558538404175988, 'Recall': 0.6373943311785182, 'F1': 0.7647491366649374}
+
+model weight = 1499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 6409, 'FP': 296, 'FN': 3646, 'Precision': 0.9558538404175988, 'Recall': 0.6373943311785182, 'F1': 0.7647491366649374}
+
+
+model weight = 2999
+{ 'image_name': 'Total', 'Class-id':  'All Images', 'TP': 6406, 'FP': 374, 'FN': 3649, 'Precision': 0.9448377581120944, 'Recall': 0.6370959721531576, 'F1': 0.761033561033561}
+
+model weight = 3499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 6429, 'FP': 323, 'FN': 3626, 'Precision': 0.9521623222748815, 'Recall': 0.6393833913475883, 'F1': 0.7650383768667817}
+
+model weight=3999
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 6409, 'FP': 296, 'FN': 3646, 'Precision': 0.9558538404175988, 'Recall': 0.6373943311785182, 'F1': 0.7647491366649374}
+
+model weight=4499
+{'image_name': 'Total', 'Class-id': 'All Images', 'TP': 6409, 'FP': 296, 'FN': 3646, 'Precision': 0.9558538404175988, 'Recall': 0.6373943311785182, 'F1': 0.7647491366649374}
+

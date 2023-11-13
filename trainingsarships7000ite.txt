@@ -1,0 +1,26 @@
+[11/09 21:02:22 d2.data.build]: Removed 0 images with no usable annotations. 27810 images left.
+[11/09 21:02:22 d2.data.dataset_mapper]: [DatasetMapper] Augmentations used in training: [ResizeShortestEdge(short_edge_length=(640, 672, 704, 736, 768, 800), max_size=1333, sample_style='choice'), RandomFlip()]
+[11/09 21:02:22 d2.data.build]: Using training sampler TrainingSampler
+[11/09 21:02:22 d2.data.common]: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[11/09 21:02:22 d2.data.common]: Serializing 27810 elements to byte tensors and concatenating them all ...
+[11/09 21:02:23 d2.data.common]: Serialized dataset takes 8.08 MiB
+[11/09 21:02:26 d2.data.build]: Removed 0 images with no usable annotations. 7945 images left.
+[11/09 21:02:26 d2.data.build]: Distribution of instances among all 1 categories:
+|  category  | #instances   |
+|:----------:|:-------------|
+|    ship    | 10055        |
+
+
+
+RuntimeError: [enforce fail at inline_container.cc:337] . unexpected pos 411016960 vs 411016848
+[11/09 23:20:53 d2.engine.hooks]: Overall training speed: 38997 iterations in 1:42:59 (0.1585 s / it)
+[11/09 23:20:53 d2.engine.hooks]: Total training time: 2:18:23 (0:35:24 on hooks)
+[11/09 23:20:53 d2.utils.events]:  eta: 1:36:04  iter: 38999  total_loss: 0.288  loss_cls: 0.03858  loss_box_reg: 0.2235  total_val_loss: 0.2212  val_loss_cls: 0.05158  val_loss_box_reg: 0.1687    time: 0.1584  last_time: 0.1750  data_time: 0.0015  last_data_time: 0.0016   lr: 0.00025  max_mem: 1868M
+Traceback (most recent call last):
+  File "/home/caic/.local/lib/python3.8/site-packages/torch/serialization.py", line 441, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol)
+  File "/home/caic/.local/lib/python3.8/site-packages/torch/serialization.py", line 668, in _save
+    zip_file.write_record(name, storage.data_ptr(), num_bytes)
+OSError: [Errno 28] No space left on device
+
+
