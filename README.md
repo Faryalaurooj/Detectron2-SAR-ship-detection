@@ -9,7 +9,7 @@ In this repo we will perfrom object detection for ships from SAR (synthtic apert
 # Quick Start
 Download the git 
 ```
-https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/edit/main/README.md
+https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection
 ```
 
 # Requirements
