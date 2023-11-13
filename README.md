@@ -29,3 +29,53 @@ We have trained detectron2 retinanet model on three public datasets for ship det
 
 We have only one class i.e. class 0 = ship.
 We perfromed training on Windows 10 Pro operating system, Intel core-i7 CPU, 32 GB RAM, 2TB HDD and NVIDIA RTX GeForce 2080 GPU with 8 GB graphics memory.
+# Dataset 
+ annotations should be provided in yolo format, this is: 
+            class, xc, yc, w, h
+    data needs to follow this structure:
+    
+    data-dir
+    ----- train
+    --------- imgs
+    ------------ filename0001.jpg
+    ------------ filename0002.jpg
+    ------------ ....
+    --------- anns
+    ------------ filename0001.txt
+    ------------ filename0002.txt
+    ------------ ....
+    ----- val
+    --------- imgs
+    ------------ filename0001.jpg
+    ------------ filename0002.jpg
+    ------------ ....
+    --------- anns
+    ------------ filename0001.txt
+    ------------ filename0002.txt
+    ------------ ....
+    
+# Train
+For training perfrom following command
+```
+python train.py  --iterations=7000  --model = COCO-Detection/retinanet_R_101_FPN_3x.yaml  -device = gpu
+```
+in the train.py file set the data directory path where you have placed your training data . Set the output directory , make first a folder and give its path to save the results xyz.pth files
+
+# Predict
+To perfrom predict perfrom following command 
+```
+python predict.py
+```
+
+It will run prediction on all the images in val folder from data directory and save the ann labels inside evaluation folder
+
+# Evaluation
+NOw we will calculate the IOU , Precision , REcall on the results from predict
+Perfrom following command
+```
+python eval.py
+```
+
+It will first calculate the IOU values by running evaluate.py file from the Evaluation folder. INside this folder there should be following folders : val "anns" , copied also as "labels" and third one you have to manually made predicted_xvz folder for the predicted results with whichever weight file are you perfroming evaluation. If you have trained for 7000 iterations and you only want to check the Precision REcall F1 score from last weights then make a predicted_6999 folder. IN this folder , the .txt files will automatically save when you run the predict.py. When you run the eval.py then model will compare the labels from ground truth folder saved as label and labels inside predicted folder and calculate IOU which it will evantually use to calculate remaining prformance metrices.
+
+
