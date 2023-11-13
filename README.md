@@ -3,6 +3,8 @@ In this repo we will perfrom object detection for ships from SAR (synthtic apert
 ![SSDD_7350ITERS_LR_0 01](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/4ba75929-b2e7-449c-8b43-fb5bc1887937)
 ![output_SSDD_7350ITERS_LR_0 001](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/ac5f3a49-11de-4ef2-adbf-cee64430aa44)
 [all_results_comparison.ods](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/files/13330960/all_results_comparison.ods)
+![Alo_75_1_2](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/4e0a5017-65b9-4dfa-af51-63de931082a0)
+![Paz_14_11_20](https://github.com/Faryalaurooj/Detectron2-SAR-ship-detection/assets/138756263/9576ba26-70f5-4f8d-b259-65d5a3fb994e)
 
 #Quick Start
 Download the git 
@@ -68,6 +70,8 @@ python predict.py
 ```
 
 It will run prediction on all the images in val folder from data directory and save the ann labels inside evaluation folder
+
+
 
 # Evaluation
 NOw we will calculate the IOU , Precision , REcall on the results from predict
